@@ -14,8 +14,7 @@ public class Likes {
 		List<String> fotos = Arrays.asList("Foto 1","Foto 2","Foto 3","Foto 4","Foto 5","Foto 6","Foto 7","Foto 8","Foto 9");
 		ArrayList<Integer> fotosLikes = new ArrayList<Integer>(Arrays.asList(0,0,0,0,0,0,0,0,0));
 		MetodoDataToArray Dat = new MetodoDataToArray();
-		String nombre = "likes";
-		ArrayList<String> datos = Dat.AString(nombre);
+		ArrayList<String> datos = Dat.AString("likes");
 		for (int i = 0; i<datos.size();i++) {
 			for(int j = 0;j<datos.get(i).length();j++) {
 				if(datos.get(i).charAt(j)=='1') {
